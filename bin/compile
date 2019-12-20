@@ -79,7 +79,7 @@ cp -R $CACHE_DIR/dart-sdk $BUILD_DIR
 message "Downloading Flutter SDK"
 curl -L -k $FLUTTER_SDK_URL > flutter-sdk.tar.xz ; tar xf flutter-sdk.tar.xz
 
-$CACHE_DIR/flutter/bin/flutter channel dev
+$CACHE_DIR/flutter/bin/flutter channel beta
 $CACHE_DIR/flutter/bin/flutter upgrade
 
 message "-----> Copy Flutter binaries to app root"
