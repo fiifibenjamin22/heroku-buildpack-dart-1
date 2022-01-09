@@ -106,9 +106,9 @@ message "-----> Flutter reports version: $CAN_FLUTTER_RUN"
 
 cd $BUILD_DIR
 
-message "-----> Running env.dart"
+# message "-----> Running env.dart"
 
-/app/dart-sdk/bin/dart tool/env.dart
+# /app/dart-sdk/bin/dart tool/env.dart
 
 message "-----> Doing pub get"
 /app/flutter/bin/flutter pub get
