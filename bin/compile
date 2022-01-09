@@ -111,10 +111,10 @@ cd $BUILD_DIR
 # /app/dart-sdk/bin/dart tool/env.dart
 
 message "-----> Doing pub get"
-/app/flutter/bin/flutter flutter pub get
+/app/flutter/bin/flutter pub get
 /app/flutter/bin/flutter config --enable-web
 message 'Building with "pub build"'
-/app/flutter/bin/flutter flutter build web
+/app/flutter/bin/flutter build web
 rm -rf /app/flutter
 rm -rf $BUILD_DIR/flutter
 # I think heroku deletes all the contents of /app and replaces it with
